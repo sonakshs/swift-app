@@ -1,0 +1,16 @@
+/*swift-app
+author='Sonaksh'
+github.com/sonakshs*/
+
+.mainGrid {
+	display: block;
+  width: 50%;
+	margin-left: 25%;
+}
+@media only screen and (max-width: 600px) {
+	.mainGrid {
+	  width: 100%;
+	  margin-left: 0;
+	  display: block
+	}
+}

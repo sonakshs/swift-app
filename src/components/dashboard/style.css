@@ -1,0 +1,64 @@
+.dashboard {
+	padding: 56px 20px;
+	min-height: 100%;
+	width: 100%;
+}
+.userCard {
+	background-color: #eeeeee !important;
+	padding: 1em;
+	margin: 1em
+}
+.userDiv{
+	display: inline-block;
+	max-width: 55%;
+	background-color: #eeeeee
+}
+.userName{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+.companyDiv{
+	display: inline-block;
+	max-width: 45% ;
+	float: right;
+}
+.companyName{
+	font-size: 1.2em;
+	text-transform: capitalize;
+	letter-spacing: -0.05em
+}
+.postsBigDiv{
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	padding: 1em;
+	margin: 1em 1em 0 1em;
+}
+.postDiv{
+	padding: 0.8em;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	background-color: #eeeeee;
+	margin-bottom: 1em;
+	text-transform: capitalize
+}
+.postTitle {
+	font-size: 1.5em;
+	margin-bottom: 1em
+}
+@media only screen and (max-width: 850px) {
+	.userDiv {
+		max-width: 100%;
+	}
+	.companyDiv {
+		max-width: 100%;
+		display: block;
+		float: none
+	}
+}	
+@media only screen and (max-width: 600px) {
+	.companyDiv {
+		display: block;
+		max-width: 100%;
+		float: none
+	}
+}	
