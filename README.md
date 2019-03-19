@@ -1,3 +1,3 @@
-fetch
-npm i
+fetch,
+npm i,
 npm start
