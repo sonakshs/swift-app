@@ -9,9 +9,7 @@
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build",
     "serve": "preact build && preact serve",
-    "dev": "preact watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "preact watch"
   },
   "keywords": [
     "preact-cli",
