@@ -1,6 +1,7 @@
 {
   "name": "SwiftApp",
   "version": "1.0.0",
+  "homepage": "https://sonakshs.github.io/swift-app",
   "description": "An example of how to use typescript with preact-cli and all its goodies",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,9 @@
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build",
     "serve": "preact build && preact serve",
-    "dev": "preact watch"
+    "dev": "preact watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "preact-cli",
@@ -25,6 +28,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-synacor": "^1.1.2",
+    "gh-pages": "^2.0.1",
     "if-env": "^1.0.4",
     "preact-cli": "^2.2.1",
     "preact-cli-plugin-typescript": "^0.2.2",
@@ -34,6 +38,7 @@
   "dependencies": {
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4",
-    "preact-router": "^2.6.1"
+    "preact-router": "^2.6.1",
+    "react-scripts": "^3.0.1"
   }
 }

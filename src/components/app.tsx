@@ -24,6 +24,7 @@ export default class App extends Component<any, any> {
 
   componentDidMount() {
     var availableUsers = this.state.availableUsers;
+    console.log(availableUsers,'available')
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(json => json.map(user => availableUsers.push({ 'id': user.id, 'email': user.email })))
